@@ -1,54 +1,17 @@
 class Speaker
 {
-	static boolean islinked=false;
-	static int currentVolume=6;
-	static int minVolume;
-	static int maxVolume=50;
-	public static boolean sound()
+public static void main(String sp[])
 	{
-		if(islinked==false)
-			islinked=true;
-		else if(islinked==true)
-			islinked=false;
-		return islinked;
-		
+	System.out.println("about this item");
+	System.out.println("Get ready to be enthralled by the 12W RMS stereo sound on Stone 580 portable wireless speaker");
+	System.out.println("The IPX4 marked water and splash-resistant build lets you carry your sound wherever travel without any worry");
+	System.out.println("Tune into the world of on-air music with uninterrupted songs and audio shows with FM radio");
+	System.out.println("You can enjoy the playback via multiple connectivity modes namely Bluetooth, AUX & USB");
+	
 	}
-	public static int increaseVolume()
-	{
-		if(islinked==true)
-		{
-			if(currentVolume<maxVolume)     
-			{
-				System.out.println("to increase the volume in speaker");
-				currentVolume=currentVolume+1;
-				System.out.println("now the current volume is   "+currentVolume);
-				return currentVolume;
-			}
-			else
-				System.out.println("max volume has execced");
-		}
-		else
-			System.out.println("the speaker is not connected");
-		return currentVolume;
-	}
-	public static int decreaseVolume()
-	{
-		if(islinked==true)
-		{
-			if(currentVolume>minVolume)
-			{
-				System.out.println("to decrease volume in speaker  ");
-				currentVolume=currentVolume-1;
-				System.out.println("now the current volume is "+currentVolume);
-				return currentVolume;
-			}
-			else
-				System.out.println("the min volume has execced");
-		
-		}
-		else
-			System.out.println("the speaker is not connected,so the volume cannot be decreased");
-		return currentVolume;
-		
-	}
+
+
+
+
+
 }
