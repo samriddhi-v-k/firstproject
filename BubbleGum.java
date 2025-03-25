@@ -17,6 +17,13 @@ class BubbleGum
 		this.advantages= advantages;
 	}
 	
+	public void updatingProfile()
+	{
+		System.out.println("the mainIngriedient is "+this.mainIngriedient);
+		System.out.println("the targetAge is "+this.targetAge);
+		System.out.println("the advantages are "+this.advantages);
+		System.out.println("");
+	}
 	
 	
 

@@ -17,5 +17,16 @@ class Bell
 		this.pitch=pitch;
 		this.weight=weight;
 	}
+	
+	
+	
+	
+	public void crossCheckBell()
+	{
+		System.out.println("the diameter "+this.diameter);
+		System.out.println("the pitch is "+this.pitch);
+		System.out.println("the weight is "+this.weight);
+		System.out.println("");
+	}
 
 }

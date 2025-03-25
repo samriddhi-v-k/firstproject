@@ -12,14 +12,16 @@ public static void main(String bag[])
 	black.instructionsOfCarryBag();
 	
 	CarryBag white= new CarryBag("6","32","42");
-	
+	white.instructionsOfCarryBag();
 	
 	CarryBag yellow= new CarryBag("7","33","43");
-	
+	yellow.instructionsOfCarryBag();
 	
 	CarryBag pink= new CarryBag("9","38","48");
+	pink.instructionsOfCarryBag();
 	
 	CarryBag orange= new CarryBag("11","42","52");
+	orange.instructionsOfCarryBag();
 	
 	
 	
