@@ -1,13 +1,13 @@
 package com.xworkz.etsyapp.etsyprofile;
 
 
-import com.xworkz.etsyapp.dto.EtsyDTO;
+import com.xworkz.etsyapp.dto.EtsyuserDTO;
 
 public class EtsyProfile {
-    public boolean registration(EtsyDTO etsyDTO)
+    public boolean registration(EtsyuserDTO etsyuserDTO)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation(etsyDTO);
+        boolean isuserValidated = validation(etsyuserDTO);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -17,35 +17,35 @@ public class EtsyProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(EtsyDTO etsyDTO)
+    public boolean validation(EtsyuserDTO etsyuserDTO)
     {
 
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(etsyDTO.getDob()!=null)
+        if(etsyuserDTO.getDob()!=null)
         {
             isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(etsyDTO.getEmail()!=null)
+        if(etsyuserDTO.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
 
-        if(etsyDTO.getPassword()!=null)
+        if(etsyuserDTO.getPassword()!=null)
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(etsyDTO.getConfirmPassword()!=null)
+        if(etsyuserDTO.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean isnameValid=false;
-        if(etsyDTO.getName()!=null)
+        if(etsyuserDTO.getName()!=null)
         {
             isnameValid=true;
         }

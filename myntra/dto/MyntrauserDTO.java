@@ -1,12 +1,12 @@
-package com.xworkz.nykaa.dto;
+package com.xworkz.myntra.dto;
 
 
-import com.xworkz.nykaa.constants.Password;
+import com.xworkz.myntra.constanats.Password;
 
-public class NykaaDTO {
+public class MyntrauserDTO {
     private String dob;
     private String email;
-    private Password password;
+    private String password;
     private String confirmPassword;
     private String name;
     public void setDob(String dob)
@@ -26,11 +26,11 @@ public class NykaaDTO {
 
         return email;
     }
-    public void setPassword(Password password)
+    public void setPassword(String password)
     {
         this.password=password;
     }
-    public Password getPassword()
+    public String getPassword()
     {
         return password;
     }

@@ -2,11 +2,11 @@ package com.xworkz.bewakoof;
 
 import com.xworkz.bewakoof.bewskoofprofile.BewakoofProfile;
 import com.xworkz.bewakoof.constants.Password;
-import com.xworkz.bewakoof.dto.BewakoofDTO;
+import com.xworkz.bewakoof.dto.BewakoofuserDTO;
 
 public class BewkoofOfficial {
     public static void main(String[] args) {
-        BewakoofDTO bewakoofDTO =new BewakoofDTO();
+        BewakoofuserDTO bewakoofDTO =new BewakoofuserDTO();
         bewakoofDTO.setName("edjpk");
         bewakoofDTO.setEmail("eeodij@gmail.com");
         bewakoofDTO.setDob("e482749");

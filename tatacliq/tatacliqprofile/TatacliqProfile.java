@@ -1,13 +1,13 @@
 package com.xworkz.tatacliq.tatacliqprofile;
 
 
-import com.xworkz.tatacliq.dto.TatacliqDTO;
+import com.xworkz.tatacliq.dto.TatacliquserDTO;
 
 public class TatacliqProfile {
-    public boolean registration(TatacliqDTO tatacliqDTO)
+    public boolean registration(TatacliquserDTO tatacliquserDTO)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation(tatacliqDTO);
+        boolean isuserValidated = validation(tatacliquserDTO);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -17,41 +17,42 @@ public class TatacliqProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(TatacliqDTO tatacliqDTO)
+    public boolean validation(TatacliquserDTO tatacliquserDTO)
     {
 
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(tatacliqDTO.getDob()!=null)
+        if(tatacliquserDTO.getDob()!=null)
         {
             isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(tatacliqDTO.getEmail()!=null)
+        if(tatacliquserDTO.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
 
-        if(tatacliqDTO.getPassword()!=null)
+        if(tatacliquserDTO.getPassword()!=null)
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(tatacliqDTO.getConfirmPassword()!=null)
+        if(tatacliquserDTO.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean isnameValid=false;
-        if(tatacliqDTO.getName()!=null)
+        if(tatacliquserDTO.getName()!=null)
         {
             isnameValid=true;
         }
         if(isdobValid==true&&isemailValid==true&&ispasswordValid==true&&isconfirmPasswordValid==true&&isnameValid)
         {
             System.out.println("user sign in successful");
+            return  isuserValidated;
         }
         else System.out.println("unser sign in unsucessful");
         return isuserValidated;

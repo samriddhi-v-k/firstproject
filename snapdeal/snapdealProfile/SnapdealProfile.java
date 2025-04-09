@@ -1,13 +1,13 @@
 package com.xworkz.snapdeal.snapdealProfile;
 
 
-import com.xworkz.snapdeal.dto.SnapdealDTO;
+import com.xworkz.snapdeal.dto.SnapdealuserDTO;
 
 public class SnapdealProfile {
-    public boolean registration(SnapdealDTO snapdealDTO)
+    public boolean registration(SnapdealuserDTO snapdealuserDTO)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation(snapdealDTO);
+        boolean isuserValidated = validation(snapdealuserDTO);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -17,41 +17,42 @@ public class SnapdealProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(SnapdealDTO snapdealDTO)
+    public boolean validation(SnapdealuserDTO snapdealuserDTO)
     {
 
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(snapdealDTO.getDob()!=null)
+        if(snapdealuserDTO.getDob()!=null)
         {
             isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(snapdealDTO.getEmail()!=null)
+        if(snapdealuserDTO.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
 
-        if(snapdealDTO.getPassword()!=null)
+        if(snapdealuserDTO.getPassword()!=null)
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(snapdealDTO.getConfirmPassword()!=null)
+        if(snapdealuserDTO.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean isnameValid=false;
-        if(snapdealDTO.getName()!=null)
+        if(snapdealuserDTO.getName()!=null)
         {
             isnameValid=true;
         }
         if(isdobValid==true&&isemailValid==true&&ispasswordValid==true&&isconfirmPasswordValid==true&&isnameValid)
         {
             System.out.println("user sign in successful");
+            return  isuserValidated;
         }
         else System.out.println("unser sign in unsucessful");
         return isuserValidated;

@@ -1,23 +1,21 @@
 package com.xworkz.lifestyle;
 
 import com.xworkz.lifestyle.constants.Password;
-import com.xworkz.lifestyle.dto.LifestyleDTO;
+import com.xworkz.lifestyle.dto.LifestyleuserDTO;
 import com.xworkz.lifestyle.lifestyleprofile.LifestyleProfile;
-
-import javax.jnlp.ClipboardService;
 
 public class LifestyeOfficial {
     public static void main(String[] args) {
-        LifestyleDTO lifestyleDTO = new LifestyleDTO();
-        lifestyleDTO.setName("lifestyle");
-        lifestyleDTO.setEmail("lifestyle@gmail.com");
-        lifestyleDTO.setDob("1-02-2004");
-        lifestyleDTO.setPassword(Password.life);
-        lifestyleDTO.setPassword(Password.style);
-        lifestyleDTO.setConfirmPassword("life");
-        lifestyleDTO.setConfirmPassword("style");
+        LifestyleuserDTO lifestyleuserDTO = new LifestyleuserDTO();
+        lifestyleuserDTO.setName("lifestyle");
+        lifestyleuserDTO.setEmail("lifestyle@gmail.com");
+        lifestyleuserDTO.setDob("1-02-2004");
+        lifestyleuserDTO.setPassword(Password.life);
+        lifestyleuserDTO.setPassword(Password.style);
+        lifestyleuserDTO.setConfirmPassword("life");
+        lifestyleuserDTO.setConfirmPassword("style");
         LifestyleProfile lifestyleProfile = new LifestyleProfile();
-        if(lifestyleProfile.validation(lifestyleDTO))
+        if(lifestyleProfile.validation(lifestyleuserDTO))
         {
             System.out.println("successful");
         }

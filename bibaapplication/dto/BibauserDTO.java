@@ -1,9 +1,9 @@
-package com.xworkz.amazonnwebsite.dto;
+package com.xworkz.bibaapplication.dto;
 
 
-import com.xworkz.amazonnwebsite.constants.Password;
+import com.xworkz.bibaapplication.constants.Password;
 
-public class AmazonDTO {
+public class BibauserDTO {
     private String dob;
     private String email;
     private Password password;
@@ -50,5 +50,4 @@ public class AmazonDTO {
     {
         return name;
     }
-
 }

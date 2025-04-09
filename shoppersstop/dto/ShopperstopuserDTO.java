@@ -1,9 +1,9 @@
-package com.xworkz.flipkartwebsite.dto;
+package com.xworkz.shoppersstop.dto;
 
 
-import com.xworkz.flipkartwebsite.constants.Password;
+import com.xworkz.shoppersstop.comstants.Password;
 
-public class FlipkartDTO {
+public class ShopperstopuserDTO {
     private String dob;
     private String email;
     private Password password;

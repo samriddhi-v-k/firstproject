@@ -1,9 +1,9 @@
-package com.xworkz.lifestyle.dto;
+package com.xworkz.firstcry.dto;
 
 
-import com.xworkz.lifestyle.constants.Password;
+import com.xworkz.firstcry.constants.Password;
 
-public class LifestyleDTO {
+public class FirstcryUserDTO {
     private String dob;
     private String email;
     private Password password;

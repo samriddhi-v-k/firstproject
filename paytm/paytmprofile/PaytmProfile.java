@@ -1,13 +1,13 @@
 package com.xworkz.paytm.paytmprofile;
 
 
-import com.xworkz.paytm.dto.PaytmDto;
+import com.xworkz.paytm.dto.PaytmuserDto;
 
 public class PaytmProfile {
-    public boolean registration(PaytmDto paytmDto)
+    public boolean registration(PaytmuserDto paytmuserDto)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation(paytmDto);
+        boolean isuserValidated = validation(paytmuserDto);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -17,35 +17,35 @@ public class PaytmProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(PaytmDto paytmDto)
+    public boolean validation(PaytmuserDto paytmuserDto)
     {
 
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(paytmDto.getDob()!=null)
+        if(paytmuserDto.getDob()!=null)
         {
             isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(paytmDto.getEmail()!=null)
+        if(paytmuserDto.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
 
-        if(paytmDto.getPassword()!=null)
+        if(paytmuserDto.getPassword()!=null)
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(paytmDto.getConfirmPassword()!=null)
+        if(paytmuserDto.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean isnameValid=false;
-        if(paytmDto.getName()!=null)
+        if(paytmuserDto.getName()!=null)
         {
             isnameValid=true;
         }

@@ -1,10 +1,10 @@
 package com.xworkz.firstcry.firstcryprofile;
 
 
-import com.xworkz.firstcry.dto.FirstcryDTO;
+import com.xworkz.firstcry.dto.FirstcryUserDTO;
 
 public class FirstcryProfile {
-    public boolean registration(FirstcryDTO firstcryDTO)
+    public boolean registration(FirstcryUserDTO firstcryDTO)
     {
         boolean isUserRegistered=false;
         boolean isuserValidated = validation(firstcryDTO);
@@ -17,7 +17,7 @@ public class FirstcryProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(FirstcryDTO firstcryDTO)
+    public boolean validation(FirstcryUserDTO firstcryDTO)
     {
 
         boolean isuserValidated = false;

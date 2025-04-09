@@ -1,9 +1,9 @@
 package com.xworkz.amazonnwebsite.amazon;
 
-import com.xworkz.amazonnwebsite.dto.AmazonDTO;
+import com.xworkz.amazonnwebsite.dto.AmazonuserDTO;
 
 public class AmazonProfile {
-    public boolean registration(AmazonDTO amazonDTO)
+    public boolean registration(AmazonuserDTO amazonDTO)
     {
         boolean isUserRegistered=false;
         boolean isuserValidated = validation(amazonDTO);
@@ -16,7 +16,7 @@ public class AmazonProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(AmazonDTO amazonDTO)
+    public boolean validation(AmazonuserDTO amazonDTO)
     {
 
         boolean isuserValidated = false;
@@ -51,6 +51,7 @@ public class AmazonProfile {
             if(isdobValid==true&&isemailValid==true&&ispasswordValid==true&&isconfirmPasswordValid==true&&isnameValid)
             {
                 System.out.println("user sign in successful");
+                return isuserValidated;
             }
             else System.out.println("unser sign in unsucessful");
             return isuserValidated;

@@ -1,9 +1,9 @@
-package com.xworkz.bewakoof.dto;
+package com.xworkz.flipkartwebsite.dto;
 
 
-import com.xworkz.bewakoof.constants.Password;
+import com.xworkz.flipkartwebsite.constants.Password;
 
-public class BewakoofDTO {
+public class FlipkartuserDTO {
     private String dob;
     private String email;
     private Password password;

@@ -3,10 +3,10 @@ package com.xworkz.shopifyapp.dto;
 
 import com.xworkz.shopifyapp.constants.Password;
 
-public class ShopifyDTO {
+public class ShopifyuserDTO {
     private String dob;
     private String email;
-    private Password password;
+    private String password;
     private String confirmPassword;
     private String name;
     public void setDob(String dob)
@@ -26,11 +26,11 @@ public class ShopifyDTO {
 
         return email;
     }
-    public void setPassword(Password password)
+    public void setPassword(String password)
     {
         this.password=password;
     }
-    public Password getPassword()
+    public String getPassword()
     {
         return password;
     }

@@ -1,9 +1,9 @@
-package com.xworkz.ajio.dto;
+package com.xworkz.beyoung.dto;
 
 
-import com.xworkz.ajio.constants.Password;
+import com.xworkz.beyoung.constants.Password;
 
-public class AjioDTO {
+public class BeyounguserDTO {
     private String dob;
     private String email;
     private Password password;
@@ -50,5 +50,4 @@ public class AjioDTO {
     {
         return name;
     }
-
 }

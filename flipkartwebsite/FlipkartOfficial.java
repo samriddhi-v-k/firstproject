@@ -1,21 +1,21 @@
 package com.xworkz.flipkartwebsite;
 
 import com.xworkz.flipkartwebsite.constants.Password;
-import com.xworkz.flipkartwebsite.dto.FlipkartDTO;
+import com.xworkz.flipkartwebsite.dto.FlipkartuserDTO;
 import com.xworkz.flipkartwebsite.flipkartprofile.FlipkartProfile;
 
 public class FlipkartOfficial {
     public static void main(String[] args) {
-        FlipkartDTO flipkartDTO = new FlipkartDTO();
-        flipkartDTO.getDob("13-09-2005");
-        flipkartDTO.getName("soumya");
-        flipkartDTO.getEmail("soumya@gmail.com");
-        flipkartDTO.getPassword(Password.flipkart);
-        flipkartDTO.getPassword(Password.samflipkart);
-        flipkartDTO.getConfirmPassword("flipkart");
-        flipkartDTO.getConfirmPassword("samflipkart");
+        FlipkartuserDTO flipkartuserDTO = new FlipkartuserDTO();
+        flipkartuserDTO.setDob("13-09-2005");
+        flipkartuserDTO.setName("soumya");
+        flipkartuserDTO.setEmail("soumya@gmail.com");
+        flipkartuserDTO.setPassword(Password.flipkart);
+        flipkartuserDTO.setPassword(Password.samflipkart);
+        flipkartuserDTO.setConfirmPassword("flipkart");
+        flipkartuserDTO.setConfirmPassword("samflipkart");
         FlipkartProfile flipkartProfile = new FlipkartProfile();
-        if(flipkartProfile.validation(flipkartDTO))
+        if(flipkartProfile.validation(flipkartuserDTO))
         {
             System.out.println("successful");
         }

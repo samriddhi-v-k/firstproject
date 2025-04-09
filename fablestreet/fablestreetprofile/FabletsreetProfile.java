@@ -1,13 +1,13 @@
 package com.xworkz.fablestreet.fablestreetprofile;
 
 
-import com.xworkz.fablestreet.dto.FablestrettDTO;
+import com.xworkz.fablestreet.dto.FablestrettuserDTO;
 
 public class FabletsreetProfile {
-    public boolean registration(FablestrettDTO fablestrettDTO)
+    public boolean registration(FablestrettuserDTO fablestrettuserDTO)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation( fablestrettDTO);
+        boolean isuserValidated = validation(fablestrettuserDTO);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -17,35 +17,35 @@ public class FabletsreetProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(FablestrettDTO fablestrettDTO)
+    public boolean validation(FablestrettuserDTO fablestrettuserDTO)
     {
 
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(fablestrettDTO.getDob()!=null)
+        if(fablestrettuserDTO.getDob()!=null)
         {
             isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(fablestrettDTO.getEmail()!=null)
+        if(fablestrettuserDTO.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
 
-        if(fablestrettDTO.getPassword()!=null)
+        if(fablestrettuserDTO.getPassword()!=null)
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(fablestrettDTO.getConfirmPassword()!=null)
+        if(fablestrettuserDTO.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean isnameValid=false;
-        if(fablestrettDTO.getName()!=null)
+        if(fablestrettuserDTO.getName()!=null)
         {
             isnameValid=true;
         }

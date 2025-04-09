@@ -3,7 +3,7 @@ package com.xworkz.passportapplication.dto;
 import com.xworkz.passportapplication.constants.HintAns;
 import com.xworkz.passportapplication.constants.HintQuestion;
 
-public class PassportDTO {
+public class PassportuserDTO {
 
     private String dob;
     private String email;

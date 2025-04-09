@@ -1,9 +1,9 @@
-package com.xworkz.max.dto;
+package com.xworkz.bewakoof.dto;
 
 
-import com.xworkz.max.constants.Password;
+import com.xworkz.bewakoof.constants.Password;
 
-public class MaxDTO {
+public class BewakoofuserDTO {
     private String dob;
     private String email;
     private Password password;

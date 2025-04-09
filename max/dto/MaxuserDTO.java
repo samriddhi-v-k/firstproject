@@ -1,9 +1,9 @@
-package com.xworkz.beyoung.dto;
+package com.xworkz.max.dto;
 
 
-import com.xworkz.beyoung.constants.Password;
+import com.xworkz.max.constants.Password;
 
-public class BeyoungDTO {
+public class MaxuserDTO {
     private String dob;
     private String email;
     private Password password;

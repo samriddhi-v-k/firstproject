@@ -1,13 +1,13 @@
 package com.xworkz.flipkartwebsite.flipkartprofile;
 
 
-import com.xworkz.flipkartwebsite.dto.FlipkartDTO;
+import com.xworkz.flipkartwebsite.dto.FlipkartuserDTO;
 
 public class FlipkartProfile {
-    public boolean registration(FlipkartDTO flipkartDTO)
+    public boolean registration(FlipkartuserDTO flipkartuserDTO)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation(flipkartDTO);
+        boolean isuserValidated = validation(flipkartuserDTO);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -17,35 +17,35 @@ public class FlipkartProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(FlipkartDTO flipkartDTO)
+    public boolean validation(FlipkartuserDTO flipkartuserDTO)
     {
 
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(flipkartDTO.getDob()!=null)
+        if(flipkartuserDTO.getDob()!=null)
         {
             isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(flipkartDTO.getEmail()!=null)
+        if(flipkartuserDTO.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
 
-        if(flipkartDTO.getPassword()!=null)
+        if(flipkartuserDTO.getPassword()!=null)
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(flipkartDTO.getConfirmPassword()!=null)
+        if(flipkartuserDTO.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean isnameValid=false;
-        if(flipkartDTO.getName()!=null)
+        if(flipkartuserDTO.getName()!=null)
         {
             isnameValid=true;
         }

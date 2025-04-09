@@ -1,9 +1,9 @@
-package com.xworkz.urbanic.dto;
+package com.xworkz.etsyapp.dto;
 
 
-import com.xworkz.urbanic.constants.Password;
+import com.xworkz.etsyapp.constants.Password;
 
-public class UrbanicDTO {
+    public class EtsyuserDTO {
     private String dob;
     private String email;
     private Password password;

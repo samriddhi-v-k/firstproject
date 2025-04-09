@@ -1,12 +1,12 @@
-package com.xworkz.snapdeal.dto;
+package com.xworkz.meeshowebsite.dto;
 
 
-import com.xworkz.snapdeal.constants.Password;
+import com.xworkz.meeshowebsite.constants.Password;
 
-public class SnapdealDTO {
+public class MeeshouserDto {
     private String dob;
     private String email;
-    private Password password;
+    private String password;
     private String confirmPassword;
     private String name;
     public void setDob(String dob)
@@ -26,11 +26,11 @@ public class SnapdealDTO {
 
         return email;
     }
-    public void setPassword(Password password)
+    public void setPassword(String password)
     {
         this.password=password;
     }
-    public Password getPassword()
+    public String getPassword()
     {
         return password;
     }
@@ -52,3 +52,5 @@ public class SnapdealDTO {
     }
 
 }
+
+

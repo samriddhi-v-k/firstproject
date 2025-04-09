@@ -1,5 +1,5 @@
 package com.xworkz.meeshowebsite.constants;
 
-public class Password {
-
+public enum Password {
+    meesho,
 }

@@ -1,13 +1,13 @@
 package com.xworkz.max.maxprofile;
 
 
-import com.xworkz.max.dto.MaxDTO;
+import com.xworkz.max.dto.MaxuserDTO;
 
 public class Maxprofile {
-    public boolean registration(MaxDTO maxDTO)
+    public boolean registration(MaxuserDTO maxuserDTO)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation(maxDTO);
+        boolean isuserValidated = validation(maxuserDTO);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -17,41 +17,42 @@ public class Maxprofile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(MaxDTO maxDTO)
+    public boolean validation(MaxuserDTO maxuserDTO)
     {
 
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(maxDTO.getDob()!=null)
+        if(maxuserDTO.getDob()!=null)
         {
             isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(maxDTO.getEmail()!=null)
+        if(maxuserDTO.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
 
-        if(maxDTO.getPassword()!=null)
+        if(maxuserDTO.getPassword()!=null)
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(maxDTO.getConfirmPassword()!=null)
+        if(maxuserDTO.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean isnameValid=false;
-        if(maxDTO.getName()!=null)
+        if(maxuserDTO.getName()!=null)
         {
             isnameValid=true;
         }
         if(isdobValid==true&&isemailValid==true&&ispasswordValid==true&&isconfirmPasswordValid==true&&isnameValid)
         {
             System.out.println("user sign in successful");
+            return  isuserValidated;
         }
         else System.out.println("unser sign in unsucessful");
         return isuserValidated;

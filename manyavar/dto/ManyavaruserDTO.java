@@ -1,9 +1,9 @@
-package com.xworkz.firstcry.dto;
+package com.xworkz.manyavar.dto;
 
 
-import com.xworkz.firstcry.constants.Password;
+import com.xworkz.manyavar.constants.Password;
 
-public class FirstcryDTO {
+public class ManyavaruserDTO {
     private String dob;
     private String email;
     private Password password;

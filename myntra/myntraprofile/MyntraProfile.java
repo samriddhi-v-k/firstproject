@@ -1,13 +1,13 @@
 package com.xworkz.myntra.myntraprofile;
 
 
-import com.xworkz.myntra.dto.MyntraDTO;
+import com.xworkz.myntra.dto.MyntrauserDTO;
 
 public class MyntraProfile {
-    public boolean registration(MyntraDTO myntraDTO)
+    public boolean registration(MyntrauserDTO myntrauserDTO)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation(myntraDTO);
+        boolean isuserValidated = validation(myntrauserDTO);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -17,41 +17,42 @@ public class MyntraProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(MyntraDTO myntraDTO)
+    public boolean validation(MyntrauserDTO myntrauserDTO)
     {
 
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(myntraDTO.getDob()!=null)
+        if(myntrauserDTO.getDob()!=null)
         {
             isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(myntraDTO.getEmail()!=null)
+        if(myntrauserDTO.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
 
-        if(myntraDTO.getPassword()!=null)
+        if(myntrauserDTO.getPassword()!=null)
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(myntraDTO.getConfirmPassword()!=null)
+        if(myntrauserDTO.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean isnameValid=false;
-        if(myntraDTO.getName()!=null)
+        if(myntrauserDTO.getName()!=null)
         {
             isnameValid=true;
         }
         if(isdobValid==true&&isemailValid==true&&ispasswordValid==true&&isconfirmPasswordValid==true&&isnameValid)
         {
             System.out.println("user sign in successful");
+            return  isuserValidated;
         }
         else System.out.println("unser sign in unsucessful");
         return isuserValidated;

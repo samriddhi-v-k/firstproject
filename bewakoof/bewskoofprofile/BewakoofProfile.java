@@ -1,10 +1,10 @@
 package com.xworkz.bewakoof.bewskoofprofile;
 
 
-import com.xworkz.bewakoof.dto.BewakoofDTO;
+import com.xworkz.bewakoof.dto.BewakoofuserDTO;
 
 public class BewakoofProfile {
-    public boolean registration(BewakoofDTO bewakoofDTO)
+    public boolean registration(BewakoofuserDTO bewakoofDTO)
     {
         boolean isUserRegistered=false;
         boolean isuserValidated = validation(bewakoofDTO);
@@ -17,7 +17,7 @@ public class BewakoofProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(BewakoofDTO bewakoofDTO)
+    public boolean validation(BewakoofuserDTO bewakoofDTO)
     {
 
         boolean isuserValidated = false;
@@ -52,6 +52,7 @@ public class BewakoofProfile {
         if(isdobValid==true&&isemailValid==true&&ispasswordValid==true&&isconfirmPasswordValid==true&&isnameValid)
         {
             System.out.println("user sign in successful");
+            return isuserValidated;
         }
         else System.out.println("unser sign in unsucessful");
         return isuserValidated;

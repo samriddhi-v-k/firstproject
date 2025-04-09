@@ -3,13 +3,13 @@ package com.xworkz.passportapplication.passport;
 
 import com.xworkz.passportapplication.constants.HintAns;
 import com.xworkz.passportapplication.constants.HintQuestion;
-import com.xworkz.passportapplication.dto.PassportDTO;
+import com.xworkz.passportapplication.dto.PassportuserDTO;
 
 public class PassportSeva {
-    public boolean registration(PassportDTO passportDTO)
+    public boolean registration(PassportuserDTO passportuserDTO)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation(passportDTO);
+        boolean isuserValidated = validation(passportuserDTO);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -19,41 +19,41 @@ public class PassportSeva {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(PassportDTO passportDTO)
+    public boolean validation(PassportuserDTO passportuserDTO)
     {
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(passportDTO.getDob()!=null)
+        if(passportuserDTO.getDob()!=null)
         {
            isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(passportDTO.getEmail()!=null)
+        if(passportuserDTO.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
-        String password = passportDTO.getPassword();
+        String password = passportuserDTO.getPassword();
         if(password!=null && !password.isEmpty())
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(passportDTO.getConfirmPassword()!=null)
+        if(passportuserDTO.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean ishintQuestion=false;
-        HintQuestion hintQuestion = passportDTO.getHintQuestion();
-        if(passportDTO.getHintQuestion()!=null )
+        HintQuestion hintQuestion = passportuserDTO.getHintQuestion();
+        if(passportuserDTO.getHintQuestion()!=null )
         {
             ishintQuestion=true;
         }
         boolean ishintAns = false;
-        HintAns hintAns = passportDTO.getHintAns();
-        if(passportDTO.getHintAns()!=null)
+        HintAns hintAns = passportuserDTO.getHintAns();
+        if(passportuserDTO.getHintAns()!=null)
         {
             ishintAns= true; 
         }

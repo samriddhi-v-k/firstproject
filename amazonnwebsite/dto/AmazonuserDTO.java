@@ -1,12 +1,12 @@
-package com.xworkz.walmartapp.dto;
+package com.xworkz.amazonnwebsite.dto;
 
 
-import com.xworkz.walmartapp.constants.Password;
+import com.xworkz.amazonnwebsite.constants.Password;
 
-public class WalmartDto {
+public class AmazonuserDTO {
     private String dob;
     private String email;
-    private Password password;
+    private String password;
     private String confirmPassword;
     private String name;
     public void setDob(String dob)
@@ -26,11 +26,11 @@ public class WalmartDto {
 
         return email;
     }
-    public void setPassword(Password password)
+    public void setPassword(String password)
     {
         this.password=password;
     }
-    public Password getPassword()
+    public String getPassword()
     {
         return password;
     }

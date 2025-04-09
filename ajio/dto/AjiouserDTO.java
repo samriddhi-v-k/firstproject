@@ -1,12 +1,10 @@
-package com.xworkz.meeshowebsite.dto;
+package com.xworkz.ajio.dto;
 
 
-import com.xworkz.meeshowebsite.constants.Password;
-
-public class MeeshoDto {
-    private String dob;
+public class AjiouserDTO {
+    private  String  dob;
     private String email;
-    private Password password;
+    private String password;
     private String confirmPassword;
     private String name;
     public void setDob(String dob)
@@ -26,11 +24,11 @@ public class MeeshoDto {
 
         return email;
     }
-    public void setPassword(Password password)
+    public void setPassword(String password)
     {
         this.password=password;
     }
-    public Password getPassword()
+    public String  getPassword()
     {
         return password;
     }
@@ -52,5 +50,3 @@ public class MeeshoDto {
     }
 
 }
-
-

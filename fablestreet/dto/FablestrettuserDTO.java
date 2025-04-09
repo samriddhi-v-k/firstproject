@@ -3,7 +3,7 @@ package com.xworkz.fablestreet.dto;
 
 import com.xworkz.fablestreet.constants.Password;
 
-public class FablestrettDTO {private String dob;
+public class FablestrettuserDTO {private String dob;
     private String email;
     private Password password;
     private String confirmPassword;

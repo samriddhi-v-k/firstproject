@@ -1,9 +1,9 @@
-package com.xworkz.paytm.dto;
+package com.xworkz.lifestyle.dto;
 
 
-import com.xworkz.paytm.constants.Password;
+import com.xworkz.lifestyle.constants.Password;
 
-public class PaytmDto {
+public class LifestyleuserDTO {
     private String dob;
     private String email;
     private Password password;

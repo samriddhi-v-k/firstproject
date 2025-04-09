@@ -1,12 +1,12 @@
 package com.xworkz.firstcry;
 
 import com.xworkz.firstcry.constants.Password;
-import com.xworkz.firstcry.dto.FirstcryDTO;
+import com.xworkz.firstcry.dto.FirstcryUserDTO;
 import com.xworkz.firstcry.firstcryprofile.FirstcryProfile;
 
 public class FirstcryOfficial {
     public static void main(String[] args) {
-        FirstcryDTO firstcryDTO = new FirstcryDTO();
+        FirstcryUserDTO firstcryDTO = new FirstcryUserDTO();
         firstcryDTO.setName("first user");
         firstcryDTO.setEmail("firstuser@gmail.com");
         firstcryDTO.setDob("09-08-2003");

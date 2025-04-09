@@ -1,11 +1,12 @@
-package com.xworkz.zara.dto;
+package com.xworkz.nykaa.dto;
 
-import com.xworkz.zara.constants.Password;
 
-public class ZaraDTO {
+import com.xworkz.nykaa.constants.Password;
+
+public class NykaauserDTO {
     private String dob;
     private String email;
-    private Password password;
+    private String password;
     private String confirmPassword;
     private String name;
     public void setDob(String dob)
@@ -25,11 +26,11 @@ public class ZaraDTO {
 
         return email;
     }
-    public void setPassword(Password password)
+    public void setPassword(String password)
     {
         this.password=password;
     }
-    public Password getPassword()
+    public String getPassword()
     {
         return password;
     }

@@ -1,13 +1,13 @@
 package com.xworkz.manyavar.manyavarprofile;
 
 
-import com.xworkz.manyavar.dto.ManyavarDTO;
+import com.xworkz.manyavar.dto.ManyavaruserDTO;
 
 public class ManyavarProfile {
-    public boolean registration(ManyavarDTO manyavarDTO)
+    public boolean registration(ManyavaruserDTO manyavaruserDTO)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation(manyavarDTO);
+        boolean isuserValidated = validation(manyavaruserDTO);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -17,35 +17,35 @@ public class ManyavarProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(ManyavarDTO manyavarDTO)
+    public boolean validation(ManyavaruserDTO manyavaruserDTO)
     {
 
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(manyavarDTO.getDob()!=null)
+        if(manyavaruserDTO.getDob()!=null)
         {
             isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(manyavarDTO.getEmail()!=null)
+        if(manyavaruserDTO.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
 
-        if(manyavarDTO.getPassword()!=null)
+        if(manyavaruserDTO.getPassword()!=null)
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(.getConfirmPassword()!=null)
+        if(manyavaruserDTO.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean isnameValid=false;
-        if(.getName()!=null)
+        if(manyavaruserDTO.getName()!=null)
         {
             isnameValid=true;
         }

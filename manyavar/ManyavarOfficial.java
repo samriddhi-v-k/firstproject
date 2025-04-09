@@ -1,17 +1,24 @@
 package com.xworkz.manyavar;
 
 import com.xworkz.manyavar.constants.Password;
-import com.xworkz.manyavar.dto.ManyavarDTO;
+import com.xworkz.manyavar.dto.ManyavaruserDTO;
+import com.xworkz.manyavar.manyavarprofile.ManyavarProfile;
 
 public class ManyavarOfficial {
     public static void main(String[] args) {
-        ManyavarDTO manyavarDTO  = new ManyavarDTO();
-        manyavarDTO.setName("dhoni");
-        manyavarDTO.setDob("15-05-2005");
-        manyavarDTO.setEmail("dhoni@gmail.com");
-        manyavarDTO.setPassword(Password.kidscollection);
-        manyavarDTO.setPassword(Password.manyavarwomencollection);
-        manyavarDTO.setConfirmPassword("kidscollection");
-        manyavarDTO.setConfirmPassword("manyavarwomencollection");
+        ManyavaruserDTO manyavaruserDTO = new ManyavaruserDTO();
+        manyavaruserDTO.setName("dhoni");
+        manyavaruserDTO.setDob("15-05-2005");
+        manyavaruserDTO.setEmail("dhoni@gmail.com");
+        manyavaruserDTO.setPassword(Password.kidscollection);
+        manyavaruserDTO.setPassword(Password.manyavarwomencollection);
+        manyavaruserDTO.setConfirmPassword("kidscollection");
+        manyavaruserDTO.setConfirmPassword("manyavarwomencollection");
+        ManyavarProfile manyavarProfile = new ManyavarProfile();
+        if(manyavarProfile.validation(manyavaruserDTO))
+        {
+            System.out.println("sucessful");
+        }
+        else System.out.println("unsucessful");
     }
 }

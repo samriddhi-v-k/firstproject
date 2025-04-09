@@ -1,13 +1,13 @@
 package com.xworkz.urbanic.urbanicprofile;
 
 
-import com.xworkz.urbanic.dto.UrbanicDTO;
+import com.xworkz.urbanic.dto.UrbanicuserDTO;
 
 public class UrbanicProfile {
-    public boolean registration(UrbanicDTO urbanicDTO)
+    public boolean registration(UrbanicuserDTO urbanicuserDTO)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation(urbanicDTO);
+        boolean isuserValidated = validation(urbanicuserDTO);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -17,41 +17,42 @@ public class UrbanicProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(UrbanicDTO urbanicDTO)
+    public boolean validation(UrbanicuserDTO urbanicuserDTO)
     {
 
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(urbanicDTO.getDob()!=null)
+        if(urbanicuserDTO.getDob()!=null)
         {
             isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(urbanicDTO.getEmail()!=null)
+        if(urbanicuserDTO.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
 
-        if(urbanicDTO.getPassword()!=null)
+        if(urbanicuserDTO.getPassword()!=null)
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(urbanicDTO.getConfirmPassword()!=null)
+        if(urbanicuserDTO.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean isnameValid=false;
-        if(urbanicDTO.getName()!=null)
+        if(urbanicuserDTO.getName()!=null)
         {
             isnameValid=true;
         }
         if(isdobValid==true&&isemailValid==true&&ispasswordValid==true&&isconfirmPasswordValid==true&&isnameValid)
         {
             System.out.println("user sign in successful");
+            return  isuserValidated;
         }
         else System.out.println("unser sign in unsucessful");
         return isuserValidated;

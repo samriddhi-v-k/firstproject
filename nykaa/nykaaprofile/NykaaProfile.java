@@ -1,13 +1,13 @@
 package com.xworkz.nykaa.nykaaprofile;
 
 
-import com.xworkz.nykaa.dto.NykaaDTO;
+import com.xworkz.nykaa.dto.NykaauserDTO;
 
 public class NykaaProfile {
-    public boolean registration(NykaaDTO nykaaDTO)
+    public boolean registration(NykaauserDTO nykaauserDTO)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation(nykaaDTO);
+        boolean isuserValidated = validation(nykaauserDTO);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -17,35 +17,35 @@ public class NykaaProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(NykaaDTO nykaaDTO)
+    public boolean validation(NykaauserDTO nykaauserDTO)
     {
 
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(nykaaDTO.getDob()!=null)
+        if(nykaauserDTO.getDob()!=null)
         {
             isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(nykaaDTO.getEmail()!=null)
+        if(nykaauserDTO.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
 
-        if(nykaaDTO.getPassword()!=null)
+        if(nykaauserDTO.getPassword()!=null)
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(nykaaDTO.getConfirmPassword()!=null)
+        if(nykaauserDTO.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean isnameValid=false;
-        if(nykaaDTO.getName()!=null)
+        if(nykaauserDTO.getName()!=null)
         {
             isnameValid=true;
         }

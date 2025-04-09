@@ -1,9 +1,9 @@
-package com.xworkz.bibaapplication.dto;
+package com.xworkz.urbanic.dto;
 
 
-import com.xworkz.bibaapplication.constants.Password;
+import com.xworkz.urbanic.constants.Password;
 
-public class BibaDTO {
+public class UrbanicuserDTO {
     private String dob;
     private String email;
     private Password password;

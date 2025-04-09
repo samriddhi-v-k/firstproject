@@ -1,14 +1,14 @@
 package com.xworkz.meeshowebsite.meeshoprofile;
 
 
-import com.xworkz.meeshowebsite.dto.MeeshoDto;
+import com.xworkz.meeshowebsite.dto.MeeshouserDto;
 
 public class MeeshoProfile {
 
-    public boolean registration(MeeshoDto meeshoDto)
+    public boolean registration(MeeshouserDto meeshouserDto)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation(meeshoDto);
+        boolean isuserValidated = validation(meeshouserDto);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -18,41 +18,42 @@ public class MeeshoProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(MeeshoDto meeshoDto)
+    public boolean validation(MeeshouserDto meeshouserDto)
     {
 
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(meeshoDto.getDob()!=null)
+        if(meeshouserDto.getDob()!=null)
         {
             isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(meeshoDto.getEmail()!=null)
+        if(meeshouserDto.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
 
-        if(meeshoDto.getPassword()!=null)
+        if(meeshouserDto.getPassword()!=null)
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(meeshoDto.getConfirmPassword()!=null)
+        if(meeshouserDto.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean isnameValid=false;
-        if(meeshoDto.getName()!=null)
+        if(meeshouserDto.getName()!=null)
         {
             isnameValid=true;
         }
         if(isdobValid==true&&isemailValid==true&&ispasswordValid==true&&isconfirmPasswordValid==true&&isnameValid)
         {
             System.out.println("user sign in successful");
+            return  isuserValidated;
         }
         else System.out.println("unser sign in unsucessful");
         return isuserValidated;

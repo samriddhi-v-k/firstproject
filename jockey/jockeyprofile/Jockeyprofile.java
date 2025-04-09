@@ -1,13 +1,13 @@
-package com.xworkz.ajio.ajioProfile;
+package com.xworkz.jockey.jockeyprofile;
 
 
-import com.xworkz.ajio.dto.AjiouserDTO;
+import com.xworkz.jockey.dto.JockeyuserDTO;
 
-public class AjioProfile {
-    public boolean registration(AjiouserDTO ajioDTO)
+public class Jockeyprofile {
+    public boolean registration(JockeyuserDTO jockeyuserDTO)
     {
         boolean isUserRegistered=false;
-        boolean isuserValidated = validation(ajioDTO);
+        boolean isuserValidated = validation(jockeyuserDTO);
         if(isuserValidated==true)
         {
             isUserRegistered=true;
@@ -17,35 +17,35 @@ public class AjioProfile {
             System.out.println("not registered");
         return isUserRegistered;
     }
-    public boolean validation(AjiouserDTO ajioDTO)
+    public boolean validation(JockeyuserDTO jockeyuserDTO)
     {
 
         boolean isuserValidated = false;
         boolean isdobValid =false;
 
-        if(ajioDTO.getDob()!=null)
+        if(jockeyuserDTO.getDob()!=null)
         {
             isdobValid=true;
         }
         boolean isemailValid= false;
 
-        if(ajioDTO.getEmail()!=null)
+        if(jockeyuserDTO.getEmail()!=null)
         {
             isemailValid= true;
         }
         boolean ispasswordValid = false;
 
-        if(ajioDTO.getPassword()!=null)
+        if(jockeyuserDTO.getPassword()!=null)
         {
             ispasswordValid=true;
         }
         boolean isconfirmPasswordValid= false;
-        if(ajioDTO.getConfirmPassword()!=null)
+        if(jockeyuserDTO.getConfirmPassword()!=null)
         {
             isconfirmPasswordValid=true;
         }
         boolean isnameValid=false;
-        if(ajioDTO.getName()!=null)
+        if(jockeyuserDTO.getName()!=null)
         {
             isnameValid=true;
         }

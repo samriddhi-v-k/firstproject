@@ -1,12 +1,12 @@
-package com.xworkz.tatacliq.dto;
+package com.xworkz.paytm.dto;
 
 
-import com.xworkz.tatacliq.constants.Password;
+import com.xworkz.paytm.constants.Password;
 
-public class TatacliqDTO {
+public class PaytmuserDto {
     private String dob;
     private String email;
-    private Password password;
+    private String password;
     private String confirmPassword;
     private String name;
     public void setDob(String dob)
@@ -26,11 +26,11 @@ public class TatacliqDTO {
 
         return email;
     }
-    public void setPassword(Password password)
+    public void setPassword(String password)
     {
         this.password=password;
     }
-    public Password getPassword()
+    public String getPassword()
     {
         return password;
     }
@@ -50,5 +50,4 @@ public class TatacliqDTO {
     {
         return name;
     }
-
 }
