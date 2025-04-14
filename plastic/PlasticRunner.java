@@ -10,5 +10,8 @@ public class PlasticRunner {
         Bottle bottle = new Bottle();
         bottle.recyle();
         bottle.lightweight();
+        Plastic plastic1 =new Bottle();
+        Bottle bottle1 =(Bottle) plastic1;
+        System.out.println(bottle1);
     }
 }

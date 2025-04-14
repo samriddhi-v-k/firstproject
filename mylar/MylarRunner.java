@@ -10,5 +10,8 @@ public class MylarRunner {
         EmergencyBlanket emergencyBlanket =new EmergencyBlanket();
         emergencyBlanket.durable();
         emergencyBlanket.reflective();
+        Mylar mylar1 = new EmergencyBlanket();
+        EmergencyBlanket emergencyBlanket1 = (EmergencyBlanket) mylar1;
+        System.out.println(emergencyBlanket1);
     }
 }

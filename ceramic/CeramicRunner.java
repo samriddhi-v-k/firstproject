@@ -10,5 +10,9 @@ public class CeramicRunner {
         Mug mug = new Mug();
         mug.heatResistant();
         mug.nonPorous();
+
+        Ceramic ceramic1 = new Mug();
+        Mug mug1 =(Mug) ceramic1;
+        System.out.println(mug1);
     }
 }

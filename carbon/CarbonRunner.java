@@ -10,5 +10,9 @@ public class CarbonRunner {
         CharcoalMask charcoalMask = new CharcoalMask();
         charcoalMask.alltropes();
         charcoalMask.covalentBonds();
+
+        Carbon carbon1 = new CharcoalMask();
+        CharcoalMask charcoalMask1 =(CharcoalMask) carbon1;
+        System.out.println(charcoalMask1);
     }
 }

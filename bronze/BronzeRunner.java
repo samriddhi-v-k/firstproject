@@ -10,5 +10,8 @@ public class BronzeRunner {
         Statue statue = new Statue();
         statue.alloy();
         statue.lowFriction();
+        Bronze bronze1 = new Statue();
+        Statue statue1 =(Statue) bronze1;
+        System.out.println(statue1);
     }
 }

@@ -10,5 +10,8 @@ public class GrapheneRunner {
         Screen screen = new Screen();
         screen.highSurfaceArea();
         screen.ultralight();
+        Graphene graphene1 = new Screen();
+        Screen screen1 = (Screen) graphene1;
+        System.out.println(screen1);
     }
 }

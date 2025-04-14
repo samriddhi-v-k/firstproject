@@ -10,5 +10,10 @@ public class GlassRunner {
         Window window = new Window();
         window.shniySurface();
         window.transparent();
+        Glass glass1 = new Window();
+        Window window1 =(Window) glass1;
+        System.out.println(window1);
+
     }
+
 }

@@ -10,5 +10,9 @@ public class LavastoneRunner {
         MassageStone massageStone = new MassageStone();
         massageStone.longlasting();
         massageStone.radiatesHeat();
+
+        LavaStone lavaStone1 = new MassageStone();
+        MassageStone massageStone1 = (MassageStone) lavaStone1;
+        System.out.println(massageStone1);
     }
 }

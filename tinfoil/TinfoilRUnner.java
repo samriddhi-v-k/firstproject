@@ -11,6 +11,10 @@ public class TinfoilRUnner {
         Wrap wrap = new Wrap();
         wrap.lightbarrier();
         wrap.nonToxic();
+
+        Tinfoil tinfoil1 = new Wrap();
+        Wrap wrap1 = (Wrap) tinfoil1;
+        System.out.println(wrap1);
     }
 
 }

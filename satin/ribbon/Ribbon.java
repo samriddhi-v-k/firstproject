@@ -1,4 +1,6 @@
 package com.xworkz.satin.ribbon;
 
-public class Ribbon {
+import com.xworkz.satin.Satin;
+
+public class Ribbon extends Satin {
 }

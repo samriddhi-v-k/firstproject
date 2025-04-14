@@ -10,5 +10,9 @@ public class GoldRunnner {
         Ring ring = new Ring();
         ring.goodElectricalConductor();
         ring.tarnishResistant();
+        Gold gold1 =new Ring();
+        Ring ring1 =(Ring) gold1;
+        System.out.println(ring1);
     }
+
 }

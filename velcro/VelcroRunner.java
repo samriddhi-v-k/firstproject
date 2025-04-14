@@ -10,5 +10,8 @@ public class VelcroRunner {
         ShoeFastner shoeFastner = new ShoeFastner();
         shoeFastner.reusable();
         shoeFastner.versatile();
+        Velcro velcro1 = new ShoeFastner();
+        ShoeFastner shoeFastner1 =(ShoeFastner) velcro1;
+        System.out.println(shoeFastner1);
     }
 }

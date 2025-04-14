@@ -11,5 +11,9 @@ public class KeysRunner {
         OfficeKeys officeKeys = new OfficeKeys();
         officeKeys.color();
         officeKeys.openLocks();
+
+        Keys keys1 = new OfficeKeys();
+        OfficeKeys officeKeys1 =(OfficeKeys) keys1;
+        System.out.println(officeKeys1);
     }
 }

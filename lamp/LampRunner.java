@@ -11,5 +11,9 @@ public class LampRunner {
         Bulb bulb = new Bulb();
         bulb.color();
         bulb.size();
+
+        Lamp lamp1 = new Bulb();
+        Bulb bulb1 = (Bulb) lamp1;
+        System.out.println(bulb1);
     }
 }

@@ -11,5 +11,9 @@ public class DesktopRunner {
         Hardrive hardrive = new Hardrive();
         hardrive.ram();
         hardrive.storage();
+
+        Desktop desktop1 = new Hardrive();
+        Hardrive hardrive1 = (Hardrive) desktop1;
+        System.out.println(hardrive1);
     }
 }

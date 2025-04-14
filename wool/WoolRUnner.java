@@ -11,5 +11,9 @@ public class WoolRUnner {
         Sweater sweater = new Sweater();
         sweater.breathable();
         sweater.naturalFibre();
+
+        Wool wool1 = new Sweater();
+        Sweater sweater1 = (Sweater) wool1;
+        System.out.println(sweater1);
     }
 }

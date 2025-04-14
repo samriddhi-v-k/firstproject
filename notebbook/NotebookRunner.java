@@ -14,5 +14,8 @@ public class NotebookRunner {
         classmate.journalling();
         classmate.toWriteNotes();
 
+        Notebook notebook1 = new Classmate();
+        Classmate classmate1 = (Classmate) notebook1;
+        System.out.println(classmate1);
     }
 }

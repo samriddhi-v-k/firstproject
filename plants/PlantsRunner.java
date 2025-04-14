@@ -11,5 +11,9 @@ public class PlantsRunner {
         IndoorPlants indoorPlants = new IndoorPlants();
         indoorPlants.oxygen();
         indoorPlants.rain();
+
+        Plants plants1 = new IndoorPlants();
+        IndoorPlants indoorPlants1 = (IndoorPlants) plants1;
+        System.out.println(indoorPlants1);
     }
 }

@@ -10,5 +10,9 @@ public class BambooRunner {
         Toothbrush toothbrush = new Toothbrush();
         toothbrush.appearence();
         toothbrush.fastGrowing();
+
+        Bamboo bamboo1 = new Toothbrush();
+        Toothbrush toothbrush1 =(Toothbrush) bamboo1;
+        System.out.println(toothbrush1);
     }
 }

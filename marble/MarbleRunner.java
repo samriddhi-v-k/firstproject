@@ -10,5 +10,9 @@ public class MarbleRunner {
         CounterTop counterTop = new CounterTop();
         counterTop.aesthetic();
         counterTop.carve();
+
+        Marble marble1 = new Marble();
+        CounterTop counterTop1 = (CounterTop) marble1;
+        System.out.println(counterTop1);
     }
 }

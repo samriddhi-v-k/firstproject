@@ -11,5 +11,9 @@ public class TreeRunner {
         MangoTree mangoTree = new MangoTree();
         mangoTree.branches();
         mangoTree.roots();
+
+        Tree tree1 = new MangoTree();
+        MangoTree mangoTree1 = (MangoTree)tree1;
+        System.out.println(mangoTree1);
     }
 }

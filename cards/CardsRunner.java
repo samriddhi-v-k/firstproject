@@ -14,5 +14,8 @@ public class CardsRunner {
         creditCard.accountNumber();
         creditCard.withdraw();
 
+        Cards cards1 = new Cards();
+        CreditCard creditCard1 =(CreditCard) cards1;
+        System.out.println(creditCard1);
     }
 }

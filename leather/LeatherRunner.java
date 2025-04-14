@@ -13,5 +13,9 @@ public class LeatherRunner {
         shoes.durability();
         shoes.shine();
         shoes.original();
+
+        Leather leather1 = new Shoes();
+        Shoes shoes1 = (Shoes) leather1;
+        System.out.println(shoes1);
     }
 }

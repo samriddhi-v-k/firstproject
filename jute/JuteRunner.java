@@ -10,5 +10,8 @@ public class JuteRunner {
         Coaster coaster = new Coaster();
         coaster.moistureAbsorbent();
         coaster.roughTexture();
+        Jute jute1 = new Jute();
+        Coaster coaster1 = (Coaster) jute1;
+        System.out.println(coaster1);
     }
 }

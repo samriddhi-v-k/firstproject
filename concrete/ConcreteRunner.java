@@ -10,5 +10,9 @@ public class ConcreteRunner {
         Bench bench =new Bench();
         bench.lowTensileStrength();
         bench.thermalMass();
+
+        Concrete concrete1 = new Bench();
+        Bench bench1 =(Bench) concrete1;
+        System.out.println(bench1);
     }
 }

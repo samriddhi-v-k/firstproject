@@ -13,5 +13,9 @@ public class BrushRunner {
         brush.bristles();
         brush.handle();
         brush.shape();
+
+        Brush brush1 = new Paintbrush();
+        Paintbrush paintbrush1 = (Paintbrush) brush1;
+        System.out.println(paintbrush1);
     }
 }

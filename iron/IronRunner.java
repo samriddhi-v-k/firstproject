@@ -10,5 +10,9 @@ public class IronRunner {
         Gate gate= new Gate();
         gate.corrosionProne();
         gate.magnetic();
+
+        Iron iron1 = new Gate();
+        Gate gate1 = (Gate) iron1;
+        System.out.println(gate1);
     }
 }

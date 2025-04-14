@@ -10,5 +10,8 @@ public class NickelRunner {
         EngineBlade engineBlade = new EngineBlade();
         engineBlade.magnetic();
         engineBlade.silveryAppearence();
+        Nickel nickel1 = new EngineBlade();
+        EngineBlade engineBlade1 = (EngineBlade) nickel1;
+        System.out.println(engineBlade1);
     }
 }

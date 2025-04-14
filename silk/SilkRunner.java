@@ -11,5 +11,10 @@ public class SilkRunner {
         Scarf scarf = new Scarf();
         scarf.smoothTexture();
         scarf.thermoRegualting();
+
+        Silk silk1 = new Scarf();
+        Scarf scarf1 = (Scarf) silk1;
+        System.out.println(scarf1);
     }
+
 }

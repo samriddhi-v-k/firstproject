@@ -1,4 +1,6 @@
 package com.xworkz.nylon.rope;
 
-public class Rope {
+import com.xworkz.nylon.Nylon;
+
+public class Rope extends Nylon {
 }

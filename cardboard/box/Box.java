@@ -1,4 +1,6 @@
 package com.xworkz.cardboard.box;
 
-public class Box {
+import com.xworkz.cardboard.Cardboard;
+
+public class Box extends Cardboard {
 }

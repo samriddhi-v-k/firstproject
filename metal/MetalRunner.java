@@ -10,5 +10,8 @@ public class MetalRunner {
         Belt belt = new Belt();
         belt.design();
         belt.durable();
+        Metal metal1 = new Belt();
+        Belt belt1 = (Belt) metal1;
+        System.out.println(belt1);
     }
 }

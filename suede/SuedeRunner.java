@@ -10,5 +10,8 @@ public class SuedeRunner {
         Boots boots = new Boots();
         boots.stylish();
         boots.velvet();
+        Suede suede1 = new Boots();
+        Boots boots1 = (Boots) suede1;
+        System.out.println(boots1);
     }
 }

@@ -10,5 +10,9 @@ public class GraniteRunner {
         Sink sink = new Sink();
         sink.hard();
         sink.patterns();
+        Granite granite1 = new Sink();
+        Sink sink1 =(Sink)granite1;
+        System.out.println(sink1);
+
     }
 }

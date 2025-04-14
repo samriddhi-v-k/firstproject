@@ -10,5 +10,8 @@ public class RUbberRunner {
         Rubber rubber = new Rubber();
         rubber.resistant();
         rubber.waterProof();
+        Rubber rubber1 = new Eraser();
+        Eraser eraser1 = (Eraser) rubber1;
+        System.out.println(eraser1);
     }
 }

@@ -11,5 +11,9 @@ public class UtensilRunner {
         Spoon spoon = new Spoon();
         spoon.foodGrade();
         spoon.nonReactiveSurface();
+
+        Utensil utensil1 = new Spoon();
+        Spoon spoon1 = (Spoon) utensil1;
+        System.out.println(spoon1);
     }
 }

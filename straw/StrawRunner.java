@@ -10,5 +10,8 @@ public class StrawRunner {
         Hat hat = new Hat();
         hat.biodegradable();
         hat.cheap();
+        Straw straw1 = new Hat();
+        Hat hat1 =(Hat) straw1;
+        System.out.println(hat1);
     }
 }

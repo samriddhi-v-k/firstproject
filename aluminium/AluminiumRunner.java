@@ -10,5 +10,11 @@ public class AluminiumRunner {
         Can can = new Can();
         can.conductorOfHeat();
         can.recyclable();
+        Aluminium aluminium1 = new Can();
+
+        Can can1 = (Can)aluminium1;
+        System.out.println(can1);
+
+
     }
 }

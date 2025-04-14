@@ -10,5 +10,9 @@ public class FireglassRunner {
         Helmet helmet = new Helmet();
         helmet.multiFunctional();
         helmet.safety();
+
+        Fireglass fireglass1 = new Helmet();
+        Helmet helmet1 = (Helmet) fireglass1;
+        System.out.println(helmet1);
     }
 }

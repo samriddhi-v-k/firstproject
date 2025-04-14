@@ -10,5 +10,9 @@ public class FoamRunner {
         Pillow pillow = new Pillow();
         pillow.shockAbsorbent();
         pillow.soft();
+
+        Foam foam1 = new Pillow();
+        Pillow pillow1 = (Pillow) foam1;
+        System.out.println(pillow1);
     }
 }

@@ -12,6 +12,9 @@ public class ClipRunner {
         paperclip.hold();
         paperclip.toattach();
 
+        Clip clip1 = new Paperclip();
+        Paperclip paperclip1 = (Paperclip) clip1;
+        System.out.println(paperclip1);
     }
 
 }

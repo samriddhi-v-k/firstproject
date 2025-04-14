@@ -10,5 +10,8 @@ public class SteelRunner {
         Bridge bridge = new Bridge();
         bridge.ductile();
         bridge.highMeltingPoint();
+        Steel steel1 = new Bridge();
+        Bridge bridge1 = (Bridge) steel1;
+        System.out.println(bridge1);
     }
 }
